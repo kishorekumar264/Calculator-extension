@@ -1,0 +1,22 @@
+{
+    "name": "Calculator",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Basic Mathematical Calculator",
+    "icons":{
+      "16":"cal.png"
+    },
+    "browser_action": {
+      "default_popup": "index.html"
+    },
+        
+        "content_scripts": [
+          {
+            "matches": ["<all_urls>"],
+            "css":["index.css"],
+            "html":["index.html"],
+            "js":["index.js"]
+            
+          }
+        ]
+        }
